@@ -45,8 +45,13 @@ public class Main {
   }
 }
 
-class Article{
+class Article {
   int id;
   String title;
   String body;
+
+  @Override
+  public String toString() {
+    return String.format("{id: %d, title: %s, body: %s}", id, title, body);
+  }
 }
